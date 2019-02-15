@@ -70,8 +70,17 @@
         <h2 class='text-center text-uppercase text-secondary mb-0'>Portfolio</h2>
         <hr class='star-dark mb-5'>
         <br>
+
+        <!-- Control buttons -->
+        <div id='myBtnContainer'>
+          <button class="category_btn active" onclick="filterSelection('all')"> ALL</button>
+          <button class="category_btn" onclick="filterSelection('machine_learning')"> MACHINE LEARNING</button>
+          <button class="category_btn" onclick="filterSelection('deep_learning')"> DEEP LEARNING</button>
+        </div>
+
+        <!-- The filterable elements. -->
         <div class='row'>
-          <div class='col-md-6 col-lg-4'>
+          <div class='col-md-6 col-lg-4 filterDiv deep_learning'>
             <a class='portfolio-item d-block mx-auto' href='#portfolio-modal-1'>
               <div class='portfolio-item-caption d-flex position-absolute h-100 w-100'>
                 <div class='portfolio-item-caption-content my-auto w-100 text-center text-white'>
@@ -81,7 +90,7 @@
               <img class='img-fluid' src='img/portfolio/dog_breeds_app.png' alt='dog_breeds_app'>
             </a>
           </div>
-          <div class='col-md-6 col-lg-4'>
+          <div class='col-md-6 col-lg-4 filterDiv deep_learning'>
             <a class='portfolio-item d-block mx-auto' href='#portfolio-modal-2'>
               <div class='portfolio-item-caption d-flex position-absolute h-100 w-100'>
                 <div class='portfolio-item-caption-content my-auto w-100 text-center text-white'>
@@ -91,7 +100,7 @@
               <img class='img-fluid' src='img/portfolio/1stNN.gif' alt='neural_network'>
             </a>
           </div>
-          <div class='col-md-6 col-lg-4'>
+          <div class='col-md-6 col-lg-4 filterDiv deep_learning'>
             <a class='portfolio-item d-block mx-auto' href='#portfolio-modal-3'>
               <div class='portfolio-item-caption d-flex position-absolute h-100 w-100'>
                 <div class='portfolio-item-caption-content my-auto w-100 text-center text-white'>
@@ -101,7 +110,7 @@
               <img class='img-fluid' src='img/portfolio/Moe4.png' alt='Moe4'>
             </a>
           </div>
-          <div class='col-md-6 col-lg-4'>
+          <div class='col-md-6 col-lg-4 filterDiv deep_learning'>
             <a class='portfolio-item d-block mx-auto' href='#portfolio-modal-4'>
               <div class='portfolio-item-caption d-flex position-absolute h-100 w-100'>
                 <div class='portfolio-item-caption-content my-auto w-100 text-center text-white'>
@@ -111,7 +120,7 @@
               <img class='img-fluid' src='img/portfolio/image_classifier.png' alt='image_classifier'>
             </a>
           </div>
-          <div class='col-md-6 col-lg-4'>
+          <div class='col-md-6 col-lg-4 filterDiv deep_learning'>
             <a class='portfolio-item d-block mx-auto' href='#portfolio-modal-5'>
               <div class='portfolio-item-caption d-flex position-absolute h-100 w-100'>
                 <div class='portfolio-item-caption-content my-auto w-100 text-center text-white'>
@@ -121,7 +130,7 @@
               <img class='img-fluid' src='img/portfolio/generate_face.png' alt='generate_face'>
             </a>
           </div>
-          <div class='col-md-6 col-lg-4'>
+          <div class='col-md-6 col-lg-4 filterDiv deep_learning'>
             <a class='portfolio-item d-block mx-auto' href='#portfolio-modal-6'>
               <div class='portfolio-item-caption d-flex position-absolute h-100 w-100'>
                 <div class='portfolio-item-caption-content my-auto w-100 text-center text-white'>
@@ -131,7 +140,7 @@
               <img class='img-fluid' src='img/portfolio/quadcopter.png' alt='quadcopter'>
             </a>
           </div>
-          <div class='col-md-6 col-lg-4'>
+          <div class='col-md-6 col-lg-4 filterDiv machine_learning'>
             <a class='portfolio-item d-block mx-auto' href='#portfolio-modal-7'>
               <div class='portfolio-item-caption d-flex position-absolute h-100 w-100'>
                 <div class='portfolio-item-caption-content my-auto w-100 text-center text-white'>
@@ -141,7 +150,7 @@
               <img class='img-fluid' src='img/portfolio/boston_house_prices.png' alt='Boston house price'>
             </a>
           </div>
-          <div class='col-md-6 col-lg-4'>
+          <div class='col-md-6 col-lg-4 filterDiv deep_learning'>
             <a class='portfolio-item d-block mx-auto' href='#portfolio-modal-8'>
               <div class='portfolio-item-caption d-flex position-absolute h-100 w-100'>
                 <div class='portfolio-item-caption-content my-auto w-100 text-center text-white'>
@@ -151,7 +160,7 @@
               <img class='img-fluid' src='img/portfolio/style_transfer.png' alt='Style transfer'>
             </a>
           </div>
-          <div class='col-md-6 col-lg-4'>
+          <div class='col-md-6 col-lg-4 filterDiv deep_learning'>
             <a class='portfolio-item d-block mx-auto' href='#portfolio-modal-9'>
               <div class='portfolio-item-caption d-flex position-absolute h-100 w-100'>
                 <div class='portfolio-item-caption-content my-auto w-100 text-center text-white'>
@@ -401,7 +410,7 @@
           <div class='col-lg-8 mx-auto'>
             <img src='img/AIback.gif' alt='AI back'>
           </div>
-          
+
           <div class='contact_container' style='margin:auto'>
             <h1 style='font-size:2rem'><font color='darkmagenta'>class</font><font color='royalblue'> ClaireLee</font><font color='#2c3e50'>:</font></h1>
             <h1 style='font-size:2rem'><font color='darkmagenta'>&nbsp &nbsp def</font><font color='royalblue'> __init__</font><font color='#2c3e50'>(self):</font></h1>
@@ -692,6 +701,7 @@
 
     <!-- Custom scripts for this template -->
     <script src='js/freelancer.min.js'></script>
+    <script src='js/custom.js'></script>
 
   </body>
 
